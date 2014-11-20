@@ -1,0 +1,97 @@
+<html>
+<head>
+<style>
+	.color { color: blue;
+	}
+</style>
+
+
+
+
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+	<title> button </title>
+		<script>
+			function myfunction(){
+			alert("the real button");
+			}
+			
+			function moveup(){
+				redball.top=redball.top-5; 
+							}
+			function movedown(){
+				redball.top=redball.top+5; 
+			}
+			function moveleft(){
+				redball.left=redball.left-5;
+			}
+			function moveright(){
+				redball.left=redball.left+5;
+			}
+			function moveupleft(){
+				redball.top=redball.top-5; redball.left=redball.left-5;
+			}
+			function movedownright(){
+				redball.top=redball.top+5; redball.left=redball.left+5;
+							}
+			function movedownleft(){
+				redball.top=redball.top+5; redball.left=redball.left-5;
+							}
+			function moveupright(){
+				redball.top=redball.top-5; redball.left=redball.left+5;
+							}				
+			function movesquare(){
+				moveup()
+				moveup()
+				moveup()
+				moveup()
+				moveleft()
+				moveleft()
+				moveleft()
+				moveleft()
+				movedown()
+				movedown()
+				movedown()
+				movedown()
+				moveright()
+				moveright()
+				moveright()
+				moveright()
+				} 
+			function movetriangle(){
+				moveupright()
+				moveupright()
+				moveupright()
+				movedownright()
+				movedownright()
+				movedownright()
+				moveleft()
+				moveleft()
+				moveleft()
+				moveleft()
+				moveleft()
+				moveleft()
+				}
+		</script>
+</head>
+<body>
+	jays button
+	<button class="color" onclick="alert('button was clicked')">super button</button>
+	<button class="color" onclick="myfunction()">new button</button>
+	<img id="redball" src="red-ball.jpg" alt="red ball" height="42" width="42">
+		<table>
+			<tr>
+				<td><button onclick="moveupleft()"><img src="upleft.jpg" height="50" width="50"></button></td>
+				<td><button onclick="moveup()"><img src="down.jpg" height="50" width="50"></button></td>
+				<td><button onclick="moveupright()"><img src="upright.jpg" height="50" width="50"></button></td>
+	<button onclick="moveleft()">move left</button>
+	<button onclick="moveright()">move right</button>
+	<button onclick="movedown()">move down</button>
+	<button onclick="movedownright()">move down right</button>
+	<button onclick="movedownleft()">move down left</button>
+	<button onclick="movesquare()">moves square</button>
+	<button onclick="movetriangle()">moves triangle</button>
+	
+	
+	
+</body>
+</html>
